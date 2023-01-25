@@ -315,13 +315,6 @@ extension CocoaDebug {
             CocoaDebugSettings.shared.onlyPrefixLogs = onlyPrefixLogs
         }
         
-        if CocoaDebugSettings.shared.firstIn == nil {//first launch
-            CocoaDebugSettings.shared.firstIn = ""
-            CocoaDebugSettings.shared.showBubbleAndWindow = true
-        } else {//not first launch
-            CocoaDebugSettings.shared.showBubbleAndWindow = CocoaDebugSettings.shared.showBubbleAndWindow
-        }
-        
         CocoaDebugSettings.shared.visible = false
         CocoaDebugSettings.shared.logSearchWordNormal = nil
         CocoaDebugSettings.shared.logSearchWordRN = nil
